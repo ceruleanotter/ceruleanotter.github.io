@@ -8,8 +8,7 @@ html(lang='en')
 		meta(name='viewport', content='width=device-width, initial-scale=1')
 		//script(src='https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js')
 		//script(src='https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js')
-		//
-			Look a comment! 
+
 		link(href='bower_components/bootstrap/dist/css/bootstrap.min.css', rel='stylesheet')
 		link(href='bower_components/flat-ui-official/css/flat-ui-edited.css', rel='stylesheet')
 		link(href='css/styles.css', rel='stylesheet')
@@ -48,8 +47,8 @@ html(lang='en')
 			.row#mission-statement.spacer-large.text-center
 					h1 Hi. It's Lyla,
 						:markdown
-							#####I'm a <a class="scroll-link" href="#traveled" data-id="traveled">globe</a> trotting <a class="scroll-link" href="#hacked" data-id="hacked">hacker</a> and <a class="scroll-link" href="#organized" data-id="organized">coordinator</a> with a passion for <a class="scroll-link" href="#filmed" data-id="filmed">multimedia</a>. 
-					p(style='white-space:pre;').text-center Want to work together?
+							#####I'm a <a class="scroll-link" href="#traveled" data-id="traveled">globe</a>-trotting <a class="scroll-link" href="#hacked" data-id="hacked">hacker</a> and <a class="scroll-link" href="#organized" data-id="organized">coordinator</a> with a passion for <a class="scroll-link" href="#filmed" data-id="filmed">multimedia</a>. 
+					p(style='white-space:pre;').text-center Want to work together? Contact me at Lyla.Fujiwara( a )gmail.com
 		
 		
 		
@@ -60,6 +59,10 @@ html(lang='en')
 					.col-md-6
 						img.img-responsive.img-rounded(src="images/aboutme.jpg")
 					.col-md-6
+						span.lead Contact Me
+						div
+							:markdown
+								**email** Lyla.Fujiwara( a )gmail.com	**LinkedIn** [lylafujiwara](https://www.linkedin.com/in/lylafujiwara) 
 						span.lead Current Goal
 						div
 							|Becoming meaningfully employed
@@ -70,12 +73,13 @@ html(lang='en')
 						ul
 							li
 								:markdown
-									Taking two [coursera](www.coursera.org) classes - [Cryptography](https://class.coursera.org/crypto-010/) and [Developing Innovative Ideas]()
-							li
-								Making this website and learning CSS3, bootstrap, and templating engines(jade and stylus) while I'm at it.
+									Taking two [Coursera](www.coursera.org) classes - [Cryptography](https://class.coursera.org/crypto-010/) and [Developing Innovative Ideas](https://class.coursera.org/innovativeideas-008)
 							li
 								:markdown
-									Working as a [HelpX]() volunteer at the [Little Flower Cooperative]()
+									Making this website and learning CSS3, bootstrap, and templating engines([Jade](http://jade-lang.com/) and Stylus(http://learnboost.github.io/stylus/)) while I'm at it.
+							li
+								:markdown
+									Working as a [HelpX](https://www.helpx.net/) volunteer at the [Little Flower Cooperative](http://littleflowercommunity.com/)
 
 			.row#organized
 				h2 Organized
@@ -83,10 +87,10 @@ html(lang='en')
 					:markdown
 						Bringing TechKobwa to life involved coordinating many organizations, including [Girls in ICT Rwanda](https://www.facebook.com/GirlsInICTRW) and [kLab](http://klab.rw/).
 						The curriculum was specially designed for the camp. It included
-						lessons on programming using MIT's [Scratch](http://scratch.mit.edu/)
-						and a lesson from [Computer Science Unplugged](http://csunplugged.org/) where the whole camp collaberated
+						lessons on programming using MIT's [Scratch](http://scratch.mit.edu/) 
+						and a lesson from [Computer Science Unplugged](http://csunplugged.org/) where the whole camp collaborated
 						to make a giant pixel-art [picture](images\techkobwa_pixels.jpg) of the mascot. [littleBits](http://littlebits.cc/) kindly donated  some of their awesome kits to the camp.
-						TechKobwa will be continuing next year with support from [Michigan State Univeristy](http://www.cse.msu.edu/tc4g/) and IBM.
+						TechKobwa will be continuing next year with support from [University State Univeristy](http://www.cse.msu.edu/tc4g/) and IBM.
 
 						**See**
 						[State Department Article](http://iipdigital.usembassy.gov/st/english/article/2013/09/20130913282834.html#axzz2yWuQIeMk),
@@ -96,19 +100,19 @@ html(lang='en')
 						[Gender and Development PC Rwanda blog post](http://gadpcrwanda.blogspot.com/2013/08/camp-techkobwa-by-liz-s_19.html),
 						[Blog post by Elisabeth Turner](http://detourscenery.wordpress.com/2013/08/23/camp-techkobwa/).
 				
-				+activity("Gashora Girls Academy Computer Lab", 'Computer Lab and Equipment Overseer', 'images/computerlab_kagame.jpg', 'Peace Corps Rwanda', '2011-2013', "Gashora Girls Academy has a sweet computer lab.")
+				+activity("Gashora Girls Academy Computer Lab", 'Technology and Lab Manager', 'images/computerlab_kagame.jpg', 'Peace Corps Rwanda', '2011-2013', "Gashora Girls Academy has a sweet computer lab.")
 					:markdown
-						Gashora Girls Academy had a lot of technical needs during my time there. We were blessed with donated machines, running
+						Gashora Girls Academy had a lot of technical needs during my time there. We were blessed with donated machines running
 						[Windows Multipoint Server](http://www.microsoft.com/casestudies/Windows-Multipoint-Server-2011/Gashora-Girls-Academy/Rwandan-Girls-Academy-Models-Cost-EffectiveTechnology-Solution-for-Future-Schools/4000010078)
 						and 270 [OLPC laptops](http://one.laptop.org/). I organized students to help administer the lab as student monitors
 						and set up a <a href="#schooltool" data-id="schooltool" class="scroll-link">student database</a> 
 						for the school using the open source SIS [SchoolTool](http://schooltool.org/).
 
 						**See**
-						[Policies Documents](), [Student Monitor Video](), [Easy Tomato Router Software]()
+						[Computer Lab Policy Documents](media/GGAST Computer Lab Policy 2013.doc), [Student Monitor Video](), [Easy Tomato Router Software](http://www.easytomato.org/)
 
 				ul.list-group
-					+activity-small("GLOW and BE Camps",'Camp Activites Coordinator', '', 'Peace Corps Rwanda', '2012-2013', "GLOW and BE are youth empowerment camps held by Peace Corps Rwanda Volunteers.")
+					+activity-small("GLOW and BE Camps",'Camp Activities Coordinator', '', 'Peace Corps Rwanda', '2012-2013', "GLOW and BE are youth empowerment camps held by Peace Corps Rwanda Volunteers.")
 						:markdown
 							[GLOW(girls leading our world)](http://www.peacecorps.gov/media/forpress/press/1840/) 
 							and the male equivalent, BE(boys excelling) focus on goal setting and health education.
@@ -121,61 +125,56 @@ html(lang='en')
 													
 			.row#hacked
 				h2 Hacked
-				+activity("SchoolTool Grade Gadget",'Programmed', 'images/schooltool.png', 'Gashora Girls Academy ICT Teacher and Resident Techie', '2011-2013', "My school needed a quick way to make report cards.")(id="schooltool" class="well well-sm")
+				+activity("SchoolTool Grade Gadget",'Programmed', 'images/schooltool.png', 'Gashora Girls Academy', '2011-2013', "My school needed a quick way to make report cards.")(id="schooltool" class="well well-sm")
 					:markdown
 						[Gashora Girls Academy](http://www.rwandagirlsinitiative.org/ggast/) was also looking for a student database. 
-						I picked the opensource SIS [SchoolTool](www.schooltool.org) and went to work creating a program that
-						would allow administers to create printable reports from exported excel data. I wrote the Gashora Grade Gadget
+						I picked the open source SIS [SchoolTool](www.schooltool.org) and went to work creating a program that
+						would allow administers to make printable reports from exported excel data. I wrote the Gashora Grade Gadget
 						using Python 2.7. It generates an html document that can be fed in to [Prince](http://www.princexml.com/) to create beautiful printable
 						PDFs. For the GUI, I used the [wx.Python](http://www.wxpython.org/) library and to create an executable I used
 						[pyBuilder](https://pypi.python.org/pypi/PyBuilder-for-Py2exe/0.3).
 
 						**See**
-						[Code on GitHub](), [Report Card Example](), [Midterm Report Example](), [GUI Screenshot]() 					
+						[Code on GitHub](https://github.com/ceruleanotter/gradegadget), [Report Card Example](), [Midterm Report Example](), [GUI Screenshot]() 					
 				+activity("Momenta",'Game Programmer, Designer', 'images/momenta.png', 'Brown University', '1/2010-5/2010', "The result of my senior year independent study in mobile games.")
 									:markdown
-										The most succsesful of which was Momenta, a 2D, touch based physics platformer. We (myself and three other students) play-tested, revised and released the finished product on the android market place. Other projects leading up
-										to Momenta included a choose your own adventure style game, and a multi-player hungry hungry hippos game. We used the Android SDK in conjuture with Eclipse. For version control we used Mercurial. 
-				
+										The most successful of which was Momenta, a 2D, touch based physics platformer. We (myself and three other students) play-tested, revised and released the finished product on the android market place.
+										Other projects leading up to Momenta included a choose your own adventure style game, and a multi-player hungry hungry hippos game. We used the Android SDK in conjunction with Eclipse. For version control we used Mercurial. 
+
 										**See**
 										[Momenta in the Android Marketplace](https://play.google.com/store/apps/details?id=androidattack.platformer) 					
 
 				ul.list-group
 					+activity-small("Educational Flash Games",'Game Programmer, Designer', '', 'Peace Corps Rwanda', '2011-2013', "There aren't many easy games for basic computer skills.")
 						:markdown
-							In my free time, I decided to fiddle with the action script 3 game library, [FlashPunk]() to create games. 
+							In my free time, I decided to fiddle with the action script 3 game library, [FlashPunk](http://useflashpunk.net/) to create games. 
 							In The Dark is a basic typing game. A little secondary python script was used to pull word definitions from
-							the web and generate multichoice questions to test vocabulary as well as typing speed.
+							the web and generate multiple choice questions to test vocabulary as well as typing speed.
 	
 							The second game, TwizaDots, was made during a hack-a-thon hosted by Africa Hack Trip. 
 							It's a simple mouse game for students to develop fine-tuned mouse control.
 
 							**See**
-							[In The Dark Typing Game on GitHub](), [TwizaDots on GitHub](), [Africa HackTrip visits Rwanda](https://africahacktrip.org/category/locations/rwanda/) 					
+							[In The Dark Typing Game on GitHub](https://github.com/ceruleanotter/inthedark), [TwizaDots on GitHub](https://github.com/ceruleanotter/TwizaDots), [Africa HackTrip visits Rwanda](https://africahacktrip.org/category/locations/rwanda/)
 	
 	
 					+activity-small("Django Expirements",'', '', 'Peace Corps Rwanda', '2011-2013', "")
 						:markdown
 							Here are the results of my practicing with the [Django framework](https://docs.djangoproject.com/en/dev/intro/tutorial01/).
 							GGAST Library is a barebones book checkout system.
-							GGAST Technical Masters was the second program I created that combined [Pinax](http://pinaxproject.com/) for user profiles 
+							GGAST Technical Masters was the second program I created. It combined [Pinax](http://pinaxproject.com/) for user profiles 
 							and [django-swingtime](https://code.google.com/p/django-swingtime/) for a Google Calendar
 							style scheduling system that computer lab monitors could use to log their hours.					
 
 							**See**
-							[GGAST Technical Masters on GitHub](), [Library Catalog on GitHub]() 					
+							[GGAST Technical Masters on GitHub](https://github.com/ceruleanotter/GGAST_TechMasters), [Library Catalog on GitHub]() 					
 	
-	
-	
-				
-
-
 
 			.row#filmed
 				h2 Filmed
-				+activity("Mount Olympus",'Executive Producer', '', 'Brown University', 'CHANGE', "What if the Greek Gods were stuck in the bodies of college students?")(class="well well-sm")
+				+activity("Mount Olympus",'Executive Producer', '', 'Brown University', '2010', "What if the Greek Gods were stuck in the bodies of college students?")(class="well well-sm")
 					:markdown
-						That was the premise of a TV mini-series that we(Arik Beatty, Jeremy Khun and myself) developed for Brown Television during our senior year. 
+						That was the premise of a TV mini-series that we ([Arik Beatty](http://www.arikbeatty.com/), [Jeremy Khun](https://files.nyu.edu/jdk360/public/) and myself) developed for Brown Television during our senior year. 
 						As an executive producer, I took turns
 						as cinematographer, director, writer and editor during production. 
 
@@ -185,45 +184,36 @@ html(lang='en')
 				+activity("48 Hour Competitions",'Cinematographer, Director', '', 'Brown University', '', "Making films in 48 hours: Can it be done?")
 					:markdown
 						Short answer, yes. And it's a ton of fun. Check out some of the films I've been a part of making during my time at Brown.
+
 						**See**
-						[Watch](http://vimeo.com/11378339), [Brown Daily Herald Article](http://www.browndailyherald.com/2010/04/26/new-btv-series-transforms-college-hill-into-mt-olympus/)
+						[Watch Not All Who Wander](https://www.youtube.com/watch?v=pImhkZ0shts), [Watch Return to Sender](https://www.youtube.com/watch?v=sV9cRXal0yo), [Watch Hair Today, Gone Tomorrow!](https://www.youtube.com/watch?v=Euks_k3rx14)
 
 				
 			.row#designed
 				h2 Designed
-				+activity("Websites",'', '', '', '', "I've been making websites since I taught myself HTML in middleschool.")
+				+activity("Websites",'', '', '', '', "I've been making websites since I taught myself HTML in middle school.")
 					:markdown
 						I know HTML, CSS and have dabbled in jQuery, mySQL, php, Rails, Django.
-						**See**
-						[is anything actually still online?]
+
+						**See** Coming Soon
 				+activity("Posters",'', '', '', '', "Posters as well?")
 					:markdown
 						I always seem to volunteer to make posters for events I'm involved in. See some examples below.
-						**See**
+
+						**See** Coming Soon
 				+activity("T-Shirts",'', '', '', '', "I designed a LOT of t-shirts in Rwanda")
 					:markdown
 						Check out these threads. The designs were inked by me, scanned or photo'd and then turned in to vector art for the printers.
-						**See**
+
+						**See** Coming Soon
 				
 			.row#educated
 				h2 Educated
+				span.lead Coming Soon
 			.row#traveled
 				h2 Traveled
-		//
-			#myCar.carousel.slide
-				ol.carousel-indicators
-					li.active(data-target="#myCar" data-slide-to="0")
-					li(data-target="#myCar" data-slide-to="1")
-					li(data-target="#myCar" data-slide-to="2")
-				.carousel-inner
-					.item.active First Slide
-					.item Second Slide
-					.item Third Slide
-				a.left.carousel-control(href="#myCar" data-slide="prev")
-					span.icon-prev
-				a.right.carousel-control(href="#myCar" data-slide="next")
-					span.icon-next
+				span.lead Coming Soon
 					
 		.navbar.navbar-default.navbar-static-bottom#bottombar
 			.container
-				p.navbar-text This website lovingly made with a mixture of CSS3, HTML5, jQuery, Bootstrap, Flat-UI, Jade, Stylus, Nib and free time.
+				p.navbar-text This website lovingly made with a mixture of CSS3, HTML5, jQuery, Bootstrap, Flat-UI, Jade, Stylus and Nib.
