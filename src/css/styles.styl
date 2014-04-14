@@ -1,0 +1,132 @@
+@import 'nib'
+
+//Big, page style things
+#profile-intro a
+.container a
+	border-bottom 1px dashed
+
+.spacer-small
+	padding-bottom 50px	  
+.spacer-large
+	padding-bottom 500px 
+.spacer-window
+	padding-bottom 1440px
+
+#bottombar
+	margin-bottom 0px
+	border-radius 0px
+	
+
+//Profile Intro Styles
+
+#profile-intro
+	background-color #2980b9
+	color #ecf0f1
+	padding-top 80px
+#profile-intro a
+	color #fff
+
+#profile-intro a:hover
+#profile-intro a:focus
+	color #1ABC9C
+	
+#mission-statement
+	color #ffffff
+
+
+#logo
+	/*position fixed
+	top 130px
+	left: 50%;
+	margin 0 0 0 -96px*/
+
+#logo-img
+	width 192px
+	height 256px
+	background url('../images/logo.png') no-repeat
+
+
+//Nav related styles
+.navbar .container a
+	border-bottom none
+#lyla-nav
+	background-color:rgba(235,248,249,0.7);
+
+//panel styles
+.panel 
+	color #2980b9
+	
+.panel a
+	color #2980B9
+	transition 0.5s
+
+.panel a:hover
+.panel a:focus
+	color #1ABC9C
+
+
+//activity styles	
+.activity-container
+	margin-bottom 40px
+	
+.activity-heading
+	margin-top 5px
+
+//Animations
+@keyframes slideIn
+	100%  
+		top 0px
+
+@keyframes menuSlideDown
+	100%
+		transform translateY(0px)
+		
+@keyframes menuSlideUp
+	100%
+		transform translateY(-100px)
+	
+
+#logo-img
+	animation slideIn 0.25s ease-in 0.5s 1 normal forwards 
+	top -300px
+	position relative
+
+
+.nav-up
+	transform translateY(-100px)
+.nav-down
+	transform translateY(0px)	
+
+.nav-animation-down
+	animation menuSlideDown 0.25s ease-in .25s 1 normal forwards
+	
+.nav-animation-up
+	animation menuSlideUp 0.25s ease-in .25s 1 normal forwards
+	
+@keyframes profileAnim
+	0%  
+		top 2000px
+		animation-timing-function linear
+	80%  
+		top 0px
+		animation-timing-function linear		
+	86% 
+		animation-timing-function ease-out
+		top 40px
+	92% 
+		animation-timing-function ease-in
+		top 0px
+	96% 
+		animation-timing-function ease-out
+		top 10px
+	100%
+		animation-timing-function ease-in
+		top 0px
+#mission-statement
+	top 2000px
+	position relative
+
+.slide-up
+	animation-name profileAnim
+	animation-duration 1.5s
+	animation-iteration-count 1

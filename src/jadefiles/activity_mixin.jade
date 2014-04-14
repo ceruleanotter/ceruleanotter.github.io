@@ -1,0 +1,78 @@
+mixin test
+	p.
+		now we are mixing:
+	block
+	
+
+mixin activity-small(activityname, activitytitle, activityimg, activitylocation, activityyear, activitylead)
+	li.list-group-item
+		.activity-container.row(id!=attributes.id class!=attributes.class)
+			.col-md-4.activity
+				.activity-title
+					h3.activity-heading=activityname
+						br
+						small=activitytitle
+			
+			.col-md-8
+				.activity-info
+					span.lead=activitylead
+					block
+					footer  
+						em=activitylocation								
+						| 
+						=activityyear
+
+
+
+mixin activity-small-collapse(activityname, activitytitle, activityimg, activitylocation, activityyear, activitylead)
+	.activity-container.row(id!=attributes.id class!=attributes.class)
+		.col-md-4.activity
+			.activity-title
+				a(data-toggle="collapse" data-parent="#organized" href="#collapseOne")
+					h3.activity-heading=activityname
+		
+		.col-md-8
+			span.lead=activitylead
+			.activity-info.collapse.collapsed#collapseOne
+				block
+				footer  
+					em=activitylocation								
+					| 
+					=activityyear
+
+
+
+
+mixin activity(activityname, activitytitle, activityimg, activitylocation, activityyear, activitylead)
+	.activity-container.row(id!=attributes.id class!=attributes.class)
+		if activityimg == ''
+			.col-md-4.activity
+				.activity-title
+					h3.activity-heading=activityname
+						br
+						small=activitytitle
+	
+			
+			.col-md-8
+				.activity-info
+					span.lead=activitylead
+					block
+					footer  
+						em=activitylocation								
+						| 
+						=activityyear
+		else		
+			.col-md-6
+				.activity-info
+					span.lead=activitylead
+					block
+					footer  
+						em=activitylocation								
+						| 
+						=activityyear
+			.col-md-6.activity
+				.activity-title
+					h4.activity-heading=activityname
+						br
+						small=activitytitle
+				img.img-responsive.img-rounded(src=activityimg)

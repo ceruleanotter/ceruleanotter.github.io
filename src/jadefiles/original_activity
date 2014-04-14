@@ -1,0 +1,13 @@
+				.panel
+					.panel-body
+						.col-md-4.activity
+							img.img-responsive.img-rounded(src="images/techkobwa2.png")
+							.activity-title
+								h5.activity-heading TechKobwa Computer Camp
+									br
+									small Camp Director and Creator
+	
+								//
+									small.activity-year 1/2013-8/2013 | 
+									small.activity-location 
+										em Gashora, Rwanda

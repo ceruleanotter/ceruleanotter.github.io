@@ -1,0 +1,84 @@
+
+doctype html
+html(lang='en')
+	head
+		title Lyla!
+		meta(charset='utf-8')
+		meta(http-equiv='X-UA-Compatible', content='IE=edge')
+		meta(name='viewport', content='width=device-width, initial-scale=1')
+		script(src='https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js')
+		script(src='https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js')
+		//
+			Look a comment! 
+		link(href='bower_components/bootstrap/dist/css/bootstrap.min.css', rel='stylesheet')
+		link(href='bower_components/flat-ui-official/css/flat-ui-edited.css', rel='stylesheet')
+		link(href='css/styles.css', rel='stylesheet')
+		// HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries 
+		// WARNING: Respond.js doesn't work if you view the page via file:// 
+		// if lt IE 9
+	body
+		script(src='bower_components/jquery/dist/jquery.min.js')
+		// Include all compiled plugins (below), or include individual files as needed 
+		script(src='bower_components/bootstrap/dist/js/bootstrap.min.js')
+		
+		.navbar.navbar-default.navbar-fixed-top
+			.container
+				button.navbar-toggle(data-toggle="collapse" data-target=".navbar-collapse")
+					//literally is making each line inside of the button
+					span.icon-bar
+					span.icon-bar
+					span.icon-bar
+				
+				a.navbar-brand(href="#") Lyla's Website
+				.collapse.navbar-collapse
+					ul.nav.navbar-nav.navbar-right
+						li.active: a(href="#") Home
+						li: a(href="#") Programming Stuff
+						li: a(href="#") Film Stuff
+						li: a(href="#") Random Stuff
+		.jumbotron
+			.container
+				h1. Hello
+				p. This is some stuff
+		
+		
+		.container
+			.row
+				.panel.panel-default.col-md-8
+					.panel-body.
+						I'm not sure what does this do?
+			.row
+				.col-md-6
+					.list-group
+					a.list-group-item(href="#")
+						h3.list-group-item-heading What's up?
+						p.list-group-item-text Nutting
+					a.list-group-item(href="#")
+						h3.list-group-item-heading Really?
+						p.list-group-item-text yes.
+				.col-md-3
+					h3.text-center Another thinggy
+					a(href="#"): img.img-responsive.img-rounded(src="images/logo.png")
+					p. woah look at this cool stuff
+				.col-md-3.thumbnail
+					h3.text-center Same Logo, New Code
+					a(href="#"): img.img-responsive.img-rounded(src="images/logo.png")
+					p. Here it is again!
+						
+		#myCar.carousel.slide
+			ol.carousel-indicators
+				li.active(data-target="#myCar" data-slide-to="0")
+				li(data-target="#myCar" data-slide-to="1")
+				li(data-target="#myCar" data-slide-to="2")
+			.carousel-inner
+				.item.active First Slide
+				.item Second Slide
+				.item Third Slide
+			a.left.carousel-control(href="#myCar" data-slide="prev")
+				span.icon-prev
+			a.right.carousel-control(href="#myCar" data-slide="next")
+				span.icon-next
+				
+		.navbar.navbar-default.navbar-fixed-bottom
+			.container
+				p.navbar-text Lyla is a person with a new navbar
