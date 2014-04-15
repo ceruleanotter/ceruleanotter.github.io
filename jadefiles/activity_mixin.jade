@@ -66,13 +66,11 @@ mixin activity(activityname, activitytitle, activityimg, activitylocation, activ
 				.activity-info
 					span.lead=activitylead
 					block
-					footer  
-						em=activitylocation								
-						| 
-						=activityyear
 			.col-md-6.activity
 				.activity-title
 					h4.activity-heading=activityname
 						br
 						small=activitytitle
+					span.activity-dateplace=activitylocation 
+					span.activity-dateplace=activityyear		
 				img.img-responsive.img-rounded(src=activityimg)

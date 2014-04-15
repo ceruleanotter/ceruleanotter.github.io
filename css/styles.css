@@ -65,10 +65,7 @@
 .activity-heading {
   margin-top: 5px;
 }
-.bullet-info .lead {
-  margin-bottom: 0px;
-  font-size: 1em;
-}
+.activity-dateplace,
 .bullet-dateplace {
   font-style: italic;
   font-size: 12px;
@@ -76,8 +73,16 @@
   position: relative;
   top: -8px;
 }
-.bullet-heading {
+.bullet-heading,
+.activity-heading {
   margin-bottom: 0px;
+}
+.bullet-info .links .pull-left p {
+  font-size: 1em;
+}
+.bullet-info .lead {
+  margin-bottom: 0px;
+  font-size: 1.2em;
 }
 #logo-img {
   -webkit-animation: slideIn 0.25s ease-in 0.5s 1 normal forwards;
