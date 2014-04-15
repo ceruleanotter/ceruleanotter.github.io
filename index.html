@@ -26,14 +26,17 @@
         </button><a class="navbar-brand">Where to?</a>
         <div class="collapse navbar-collapse">
           <ul class="nav navbar-nav navbar-right">
-            <li class="active"><a href="#logo" data-id="logo" class="scroll-link">Top</a></li>
+            <li><a href="#logo" data-id="logo" class="scroll-link">Top</a></li>
             <li><a href="#basics" data-id="basics" class="scroll-link">About Me</a></li>
             <li><a href="#organized" data-id="organized" class="scroll-link">Organized</a></li>
             <li><a href="#hacked" data-id="hacked" class="scroll-link">Hacked</a></li>
             <li><a href="#filmed" data-id="filmed" class="scroll-link">Filmed</a></li>
-            <li><a href="#designed" data-id="designed" class="scroll-link">Designed</a></li>
-            <li><a href="#educated" data-id="educated" class="scroll-link">Educated						</a></li>
-            <li><a href="#traveled" data-id="traveled" class="scroll-link">Traveled</a></li>
+            <!--
+            li: a.scroll-link(href="#designed" data-id="designed") Designed
+            li: a.scroll-link(href="#educated" data-id="educated") Educated						
+            li: a.scroll-link(href="#traveled" data-id="traveled") Traveled
+            
+            -->
           </ul>
         </div>
       </div>
@@ -65,6 +68,9 @@
 
               </li>
               <li><p>Making this website and learning CSS3, bootstrap, and templating engines(<a href="http://jade-lang.com/">Jade</a> and Stylus(<a href="http://learnboost.github.io/stylus/">http://learnboost.github.io/stylus/</a>)) while I&#39;m at it.</p>
+
+              </li>
+              <li><p>Working as a <a href="https://www.helpx.net/">HelpX</a> volunteer at the <a href="http://littleflowercommunity.com/">Little Flower Cooperative</a></p>
 
               </li>
             </ul>
@@ -119,30 +125,21 @@ for the school using the open source SIS <a href="http://schooltool.org/">School
             </div><img src="images/computerlab_kagame.jpg" class="img-responsive img-rounded"/>
           </div>
         </div>
-        <ul class="list-group">
-          <li class="list-group-item">
-            <div class="activity-container row">
-              <div class="col-md-4 activity">
-                <div class="activity-title">
-                  <h3 class="activity-heading">GLOW and BE Camps<br/><small>Camp Activities Coordinator</small></h3>
-                </div>
-              </div>
-              <div class="col-md-8">
-                <div class="activity-info"><span class="lead">GLOW and BE are youth empowerment camps held by Peace Corps Rwanda Volunteers.</span><p><a href="http://www.peacecorps.gov/media/forpress/press/1840/">GLOW(girls leading our world)</a> 
-and the male equivalent, BE(boys excelling) focus on goal setting and health education.
-I&#39;ve worked in the capacity of organizing the afternoon and evening activities
-that take place after the core morning lessons. This has included sports
-dances, arts and crafts, and a rather involved camp-wide field days and a scavenger hunt.</p>
-<p><strong>See</strong>
-<a href="">Photos</a></p>
-
-                  <footer> <em>Peace Corps Rwanda</em> 2012-2013
-                  </footer>
-                </div>
-              </div>
+        <div class="bullet-container row">
+          <div class="col-md-4 bullet">
+            <div class="bullet-title">
+              <h4 class="bullet-heading">GLOW and BE Camps<br/><small>Camp Activities Coordinator</small></h4><span class="bullet-dateplace">Peace Corps Rwanda</span><span class="bullet-dateplace">2012-2013</span>
             </div>
-          </li>
-        </ul>
+          </div>
+          <div class="col-md-8">
+            <div class="bullet-info"><span class="lead">Organized camp activites such as sports dances, arts and crafts, and camp-wide field days and a scavenger hunt for GLOW and BE youth camps.</span>
+              <footer><p><strong>See</strong> <a href="http://www.peacecorps.gov/media/forpress/press/1840/">GLOW(girls leading our world)</a></p>
+
+                <k></k>
+              </footer>
+            </div>
+          </div>
+        </div>
       </div>
       <div id="hacked" class="row">
         <h2>Hacked</h2>
@@ -184,52 +181,41 @@ Other projects leading up to Momenta included a choose your own adventure style 
             </div><img src="images/momenta.png" class="img-responsive img-rounded"/>
           </div>
         </div>
-        <ul class="list-group">
-          <li class="list-group-item">
-            <div class="activity-container row">
-              <div class="col-md-4 activity">
-                <div class="activity-title">
-                  <h3 class="activity-heading">Educational Flash Games<br/><small>Game Programmer, Designer</small></h3>
-                </div>
-              </div>
-              <div class="col-md-8">
-                <div class="activity-info"><span class="lead">There aren't many easy games for basic computer skills.</span><p>In my free time, I decided to fiddle with the action script 3 game library, <a href="http://useflashpunk.net/">FlashPunk</a> to create games. 
-In The Dark is a basic typing game. A little secondary python script was used to pull word definitions from
-the web and generate multiple choice questions to test vocabulary as well as typing speed.
-The second game, TwizaDots, was made during a hack-a-thon hosted by Africa Hack Trip. 
-It&#39;s a simple mouse game for students to develop fine-tuned mouse control.</p>
-<p><strong>See</strong>
-<a href="https://github.com/ceruleanotter/inthedark">In The Dark Typing Game on GitHub</a>, <a href="https://github.com/ceruleanotter/TwizaDots">TwizaDots on GitHub</a>, <a href="https://africahacktrip.org/category/locations/rwanda/">Africa HackTrip visits Rwanda</a></p>
-
-                  <footer> <em>Peace Corps Rwanda</em> 2011-2013
-                  </footer>
-                </div>
-              </div>
+        <div class="bullet-container row">
+          <div class="col-md-4 bullet">
+            <div class="bullet-title">
+              <h4 class="bullet-heading">Educational Flash Games<br/><small>Game Programmer, Designer</small></h4><span class="bullet-dateplace">Peace Corps Rwanda</span><span class="bullet-dateplace">2011-2013</span>
             </div>
-          </li>
-          <li class="list-group-item">
-            <div class="activity-container row">
-              <div class="col-md-4 activity">
-                <div class="activity-title">
-                  <h3 class="activity-heading">Django Expirements<br/><small></small></h3>
-                </div>
-              </div>
-              <div class="col-md-8">
-                <div class="activity-info"><span class="lead"></span><p>Here are the results of my practicing with the <a href="https://docs.djangoproject.com/en/dev/intro/tutorial01/">Django framework</a>.
-GGAST Library is a barebones book checkout system.
-GGAST Technical Masters was the second program I created. It combined <a href="http://pinaxproject.com/">Pinax</a> for user profiles 
-and <a href="https://code.google.com/p/django-swingtime/">django-swingtime</a> for a Google Calendar
-style scheduling system that computer lab monitors could use to log their hours.                    </p>
-<p><strong>See</strong>
-<a href="https://github.com/ceruleanotter/GGAST_TechMasters">GGAST Technical Masters on GitHub</a>, <a href="">Library Catalog on GitHub</a>                     </p>
-
-                  <footer> <em>Peace Corps Rwanda</em> 2011-2013
-                  </footer>
-                </div>
-              </div>
+          </div>
+          <div class="col-md-8">
+            <div class="bullet-info"><span class="lead">Flash games designed for my students</span>
+              <footer><span class="pull-left"><p><strong>See</strong>
+<a href="https://github.com/ceruleanotter/inthedark">In The Dark Typing Game on GitHub</a>, <a href="https://github.com/ceruleanotter/TwizaDots">TwizaDots on GitHub</a>, <a href="https://africahacktrip.org/category/locations/rwanda/">Africa HackTrip visits Rwanda</a>, TwizaDots made during <a href="https://africahacktrip.org/">Africa Hack Trip</a>
+<strong>Used</strong>
+<a href="http://useflashpunk.net/">Flashpunk</a></p>
+</span>
+                <k></k>
+              </footer>
             </div>
-          </li>
-        </ul>
+          </div>
+        </div>
+        <div class="bullet-container row">
+          <div class="col-md-4 bullet">
+            <div class="bullet-title">
+              <h4 class="bullet-heading">Django Expirements<br/><small>Programmer</small></h4><span class="bullet-dateplace">Peace Corps Rwanda</span><span class="bullet-dateplace">2011-2013</span>
+            </div>
+          </div>
+          <div class="col-md-8">
+            <div class="bullet-info"><span class="lead">Some experiments fiddling with the Django framework.</span>
+              <footer>					<span class="pull-left"><p><strong>See</strong>
+<a href="https://github.com/ceruleanotter/GGAST_TechMasters">GGAST Technical Masters on GitHub</a>
+<strong>Used</strong> <a href="https://docs.djangoproject.com/en/dev/intro/tutorial01/">Django</a>, <a href="http://pinaxproject.com/">Pinax</a>, <a href="https://code.google.com/p/django-swingtime/">django-swingtime</a></p>
+</span>
+                <k></k>
+              </footer>
+            </div>
+          </div>
+        </div>
       </div>
       <div id="filmed" class="row">
         <h2>Filmed</h2>
@@ -251,77 +237,34 @@ as cinematographer, director, writer and editor during production. </p>
             </div>
           </div>
         </div>
-        <div class="activity-container row">
-          <div class="col-md-4 activity">
-            <div class="activity-title">
-              <h3 class="activity-heading">48 Hour Competitions<br/><small>Cinematographer, Director</small></h3>
+        <div class="bullet-container row">
+          <div class="col-md-4 bullet">
+            <div class="bullet-title">
+              <h4 class="bullet-heading">48 Hour Competitions<br/><small>Cinematographer, Director</small></h4><span class="bullet-dateplace">Brown University</span><span class="bullet-dateplace">2009-2010</span>
             </div>
           </div>
           <div class="col-md-8">
-            <div class="activity-info"><span class="lead">Making films in 48 hours: Can it be done?</span><p>Short answer, yes. And it&#39;s a ton of fun. Check out some of the films I&#39;ve been a part of making during my time at Brown.</p>
-<p><strong>See</strong>
+            <div class="bullet-info"><span class="lead">Films made during various 48 hour film competitions.</span>
+              <footer><p><strong>See</strong>
 <a href="https://www.youtube.com/watch?v=pImhkZ0shts">Watch Not All Who Wander</a>, <a href="https://www.youtube.com/watch?v=sV9cRXal0yo">Watch Return to Sender</a>, <a href="https://www.youtube.com/watch?v=Euks_k3rx14">Watch Hair Today, Gone Tomorrow!</a></p>
 
-              <footer> <em>Brown University</em> 
+                <k></k>
               </footer>
             </div>
           </div>
         </div>
       </div>
-      <div id="designed" class="row">
-        <h2>Designed</h2>
-        <div class="activity-container row">
-          <div class="col-md-4 activity">
-            <div class="activity-title">
-              <h3 class="activity-heading">Websites<br/><small></small></h3>
-            </div>
-          </div>
-          <div class="col-md-8">
-            <div class="activity-info"><span class="lead">I've been making websites since I taught myself HTML in middle school.</span><p>I know HTML, CSS and have dabbled in jQuery, mySQL, php, Rails, Django.</p>
-<p><strong>See</strong> Coming Soon</p>
-
-              <footer> <em></em> 
-              </footer>
-            </div>
-          </div>
-        </div>
-        <div class="activity-container row">
-          <div class="col-md-4 activity">
-            <div class="activity-title">
-              <h3 class="activity-heading">Posters<br/><small></small></h3>
-            </div>
-          </div>
-          <div class="col-md-8">
-            <div class="activity-info"><span class="lead">Posters as well?</span><p>I always seem to volunteer to make posters for events I&#39;m involved in. See some examples below.</p>
-<p><strong>See</strong> Coming Soon</p>
-
-              <footer> <em></em> 
-              </footer>
-            </div>
-          </div>
-        </div>
-        <div class="activity-container row">
-          <div class="col-md-4 activity">
-            <div class="activity-title">
-              <h3 class="activity-heading">T-Shirts<br/><small></small></h3>
-            </div>
-          </div>
-          <div class="col-md-8">
-            <div class="activity-info"><span class="lead">I designed a LOT of t-shirts in Rwanda</span><p>Check out these threads. The designs were inked by me, scanned or photo&#39;d and then turned in to vector art for the printers.</p>
-<p><strong>See</strong> Coming Soon</p>
-
-              <footer> <em></em> 
-              </footer>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div id="educated" class="row">
-        <h2>Educated</h2><span class="lead">Coming Soon</span>
-      </div>
-      <div id="traveled" class="row">
-        <h2>Traveled</h2><span class="lead">Coming Soon</span>
-      </div>
+      <!--
+      .row#designed
+       h2 Designed
+       span.lead Coming Soon
+      .row#educated
+       h2 Educated
+       span.lead Coming Soon
+      .row#traveled
+       h2 Traveled
+       span.lead Coming Soon
+      -->
     </div>
     <div id="bottombar" class="navbar navbar-default navbar-static-bottom">
       <div class="container">

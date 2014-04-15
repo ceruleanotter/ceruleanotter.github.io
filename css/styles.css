@@ -17,9 +17,9 @@
   border-radius: 0px;
 }
 #profile-intro {
+  padding-top: 70px;
   background-color: #2980b9;
   color: #ecf0f1;
-  padding-top: 80px;
 }
 #profile-intro a {
   color: #fff;
@@ -57,11 +57,27 @@
 .panel a:focus {
   color: #1abc9c;
 }
+.bullet-container,
 .activity-container {
   margin-bottom: 40px;
 }
+.bullet-heading,
 .activity-heading {
   margin-top: 5px;
+}
+.bullet-info .lead {
+  margin-bottom: 0px;
+  font-size: 1em;
+}
+.bullet-dateplace {
+  font-style: italic;
+  font-size: 12px;
+  margin: 0px;
+  position: relative;
+  top: -8px;
+}
+.bullet-heading {
+  margin-bottom: 0px;
 }
 #logo-img {
   -webkit-animation: slideIn 0.25s ease-in 0.5s 1 normal forwards;

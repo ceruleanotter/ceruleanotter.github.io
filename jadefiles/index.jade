@@ -1,4 +1,5 @@
 include activity_mixin
+include bullet_mixin
 doctype html
 html(lang='en')
 	head
@@ -32,14 +33,15 @@ html(lang='en')
 				a.navbar-brand Where to?
 				.collapse.navbar-collapse
 					ul.nav.navbar-nav.navbar-right
-						li.active: a.scroll-link(href="#logo" data-id="logo") Top
+						li: a.scroll-link(href="#logo" data-id="logo") Top
 						li: a.scroll-link(href="#basics" data-id="basics") About Me
 						li: a.scroll-link(href="#organized" data-id="organized") Organized
 						li: a.scroll-link(href="#hacked" data-id="hacked") Hacked
 						li: a.scroll-link(href="#filmed" data-id="filmed") Filmed
-						li: a.scroll-link(href="#designed" data-id="designed") Designed
-						li: a.scroll-link(href="#educated" data-id="educated") Educated						
-						li: a.scroll-link(href="#traveled" data-id="traveled") Traveled
+						//
+							li: a.scroll-link(href="#designed" data-id="designed") Designed
+							li: a.scroll-link(href="#educated" data-id="educated") Educated						
+							li: a.scroll-link(href="#traveled" data-id="traveled") Traveled
 
 		#profile-intro
 			.container
@@ -75,6 +77,9 @@ html(lang='en')
 							li
 								:markdown
 									Making this website and learning CSS3, bootstrap, and templating engines([Jade](http://jade-lang.com/) and Stylus(http://learnboost.github.io/stylus/)) while I'm at it.
+							li
+								:markdown
+									Working as a [HelpX](https://www.helpx.net/) volunteer at the [Little Flower Cooperative](http://littleflowercommunity.com/)
 
 			.row#organized
 				h2 Organized
@@ -85,7 +90,7 @@ html(lang='en')
 						lessons on programming using MIT's [Scratch](http://scratch.mit.edu/) 
 						and a lesson from [Computer Science Unplugged](http://csunplugged.org/) where the whole camp collaborated
 						to make a giant pixel-art [picture](images\techkobwa_pixels.jpg) of the mascot. [littleBits](http://littlebits.cc/) kindly donated  some of their awesome kits to the camp.
-						TechKobwa will be continuing next year with support from [University State Univeristy](http://www.cse.msu.edu/tc4g/) and IBM.
+						TechKobwa will be continuing next year with support from [Michigan State University](http://www.cse.msu.edu/tc4g/) and IBM.
 
 						**See**
 						[State Department Article](http://iipdigital.usembassy.gov/st/english/article/2013/09/20130913282834.html#axzz2yWuQIeMk),
@@ -104,19 +109,11 @@ html(lang='en')
 						for the school using the open source SIS [SchoolTool](http://schooltool.org/).
 
 						**See**
-						[Computer Lab Policy Documents](media/GGAST Computer Lab Policy 2013.doc), [Student Monitor Video](), [Easy Tomato Router Software](http://www.easytomato.org/)
+						[Computer Lab Policy Documents](media/GGAST Computer Lab Policy 2013.doc), [Student Monitor Video](http://youtu.be/_oFwRCOYCSM), [Easy Tomato Router Software](http://www.easytomato.org/)
 
-				ul.list-group
-					+activity-small("GLOW and BE Camps",'Camp Activities Coordinator', '', 'Peace Corps Rwanda', '2012-2013', "GLOW and BE are youth empowerment camps held by Peace Corps Rwanda Volunteers.")
-						:markdown
-							[GLOW(girls leading our world)](http://www.peacecorps.gov/media/forpress/press/1840/) 
-							and the male equivalent, BE(boys excelling) focus on goal setting and health education.
-							I've worked in the capacity of organizing the afternoon and evening activities
-							that take place after the core morning lessons. This has included sports
-							dances, arts and crafts, and a rather involved camp-wide field days and a scavenger hunt.
-
-							**See**
-							[Photos]()
+				+bullet("GLOW and BE Camps",'Camp Activities Coordinator', 'Peace Corps Rwanda', '2012-2013', "Organized camp activities such as sports dances, arts and crafts, and camp-wide field days and a scavenger hunt for GLOW and BE youth camps.")
+					:markdown
+						**See** [GLOW(girls leading our world)](http://www.peacecorps.gov/media/forpress/press/1840/)
 													
 			.row#hacked
 				h2 Hacked
@@ -139,30 +136,22 @@ html(lang='en')
 										**See**
 										[Momenta in the Android Marketplace](https://play.google.com/store/apps/details?id=androidattack.platformer) 					
 
-				ul.list-group
-					+activity-small("Educational Flash Games",'Game Programmer, Designer', '', 'Peace Corps Rwanda', '2011-2013', "There aren't many easy games for basic computer skills.")
-						:markdown
-							In my free time, I decided to fiddle with the action script 3 game library, [FlashPunk](http://useflashpunk.net/) to create games. 
-							In The Dark is a basic typing game. A little secondary python script was used to pull word definitions from
-							the web and generate multiple choice questions to test vocabulary as well as typing speed.
-	
-							The second game, TwizaDots, was made during a hack-a-thon hosted by Africa Hack Trip. 
-							It's a simple mouse game for students to develop fine-tuned mouse control.
 
-							**See**
-							[In The Dark Typing Game on GitHub](https://github.com/ceruleanotter/inthedark), [TwizaDots on GitHub](https://github.com/ceruleanotter/TwizaDots), [Africa HackTrip visits Rwanda](https://africahacktrip.org/category/locations/rwanda/)
-	
-	
-					+activity-small("Django Expirements",'', '', 'Peace Corps Rwanda', '2011-2013', "")
+				
+				+bullet("Educational Flash Games",'Game Programmer, Designer', 'Peace Corps Rwanda', '2011-2013', "Flash games designed for my students")
+					span.pull-left
 						:markdown
-							Here are the results of my practicing with the [Django framework](https://docs.djangoproject.com/en/dev/intro/tutorial01/).
-							GGAST Library is a barebones book checkout system.
-							GGAST Technical Masters was the second program I created. It combined [Pinax](http://pinaxproject.com/) for user profiles 
-							and [django-swingtime](https://code.google.com/p/django-swingtime/) for a Google Calendar
-							style scheduling system that computer lab monitors could use to log their hours.					
-
 							**See**
-							[GGAST Technical Masters on GitHub](https://github.com/ceruleanotter/GGAST_TechMasters), [Library Catalog on GitHub]() 					
+							[In The Dark Typing Game on GitHub](https://github.com/ceruleanotter/inthedark), [TwizaDots on GitHub](https://github.com/ceruleanotter/TwizaDots), [Africa HackTrip visits Rwanda](https://africahacktrip.org/category/locations/rwanda/), TwizaDots made during [Africa Hack Trip](https://africahacktrip.org/)
+							**Used**
+							[Flashpunk](http://useflashpunk.net/)
+
+				+bullet("Django Experiments",'Programmer', 'Peace Corps Rwanda', '2011-2013', "Some experiments fiddling with the Django framework.")					
+					span.pull-left
+						:markdown
+							**See**
+							[GGAST Technical Masters on GitHub](https://github.com/ceruleanotter/GGAST_TechMasters)
+							**Used** [Django](https://docs.djangoproject.com/en/dev/intro/tutorial01/), [Pinax](http://pinaxproject.com/), [django-swingtime](https://code.google.com/p/django-swingtime/)
 	
 
 			.row#filmed
@@ -176,38 +165,21 @@ html(lang='en')
 						**See**
 						[Watch](http://vimeo.com/11378339), [Brown Daily Herald Article](http://www.browndailyherald.com/2010/04/26/new-btv-series-transforms-college-hill-into-mt-olympus/)
 
-				+activity("48 Hour Competitions",'Cinematographer, Director', '', 'Brown University', '', "Making films in 48 hours: Can it be done?")
+				+bullet("48 Hour Competitions",'Cinematographer, Director', 'Brown University', '2009-2010', "Films made during various 48 hour film competitions.")
 					:markdown
-						Short answer, yes. And it's a ton of fun. Check out some of the films I've been a part of making during my time at Brown.
-
 						**See**
 						[Watch Not All Who Wander](https://www.youtube.com/watch?v=pImhkZ0shts), [Watch Return to Sender](https://www.youtube.com/watch?v=sV9cRXal0yo), [Watch Hair Today, Gone Tomorrow!](https://www.youtube.com/watch?v=Euks_k3rx14)
 
-				
-			.row#designed
-				h2 Designed
-				+activity("Websites",'', '', '', '', "I've been making websites since I taught myself HTML in middle school.")
-					:markdown
-						I know HTML, CSS and have dabbled in jQuery, mySQL, php, Rails, Django.
-
-						**See** Coming Soon
-				+activity("Posters",'', '', '', '', "Posters as well?")
-					:markdown
-						I always seem to volunteer to make posters for events I'm involved in. See some examples below.
-
-						**See** Coming Soon
-				+activity("T-Shirts",'', '', '', '', "I designed a LOT of t-shirts in Rwanda")
-					:markdown
-						Check out these threads. The designs were inked by me, scanned or photo'd and then turned in to vector art for the printers.
-
-						**See** Coming Soon
-				
-			.row#educated
-				h2 Educated
-				span.lead Coming Soon
-			.row#traveled
-				h2 Traveled
-				span.lead Coming Soon
+			//
+				.row#designed
+					h2 Designed
+					span.lead Coming Soon
+				.row#educated
+					h2 Educated
+					span.lead Coming Soon
+				.row#traveled
+					h2 Traveled
+					span.lead Coming Soon
 					
 		.navbar.navbar-default.navbar-static-bottom#bottombar
 			.container

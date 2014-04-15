@@ -1,0 +1,102 @@
+include activity_mixin
+doctype html
+html(lang='en')
+	head
+		title Lyla!
+		meta(charset='utf-8')
+		meta(http-equiv='X-UA-Compatible', content='IE=edge')
+		meta(name='viewport', content='width=device-width, initial-scale=1')
+		//script(src='https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js')
+		//script(src='https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js')
+
+		link(href='bower_components/bootstrap/dist/css/bootstrap.min.css', rel='stylesheet')
+		link(href='bower_components/flat-ui-official/css/flat-ui-edited.css', rel='stylesheet')
+		link(href='css/styles.css', rel='stylesheet')
+		script(src='bower_components/jquery/dist/jquery.min.js')
+		// Include all compiled plugins (below), or include individual files as needed 
+		script(src='bower_components/bootstrap/dist/js/bootstrap.min.js')
+		script(src='js/profile.js')
+		// HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries 
+		// WARNING: Respond.js doesn't work if you view the page via file:// 
+		// if lt IE 9
+	body
+
+		.navbar.navbar-default.navbar-fixed-top.nav-up#lyla-nav
+			.container
+				button.navbar-toggle(data-toggle="collapse" data-target=".navbar-collapse")
+					//literally is making each line inside of the button
+					span.icon-bar
+					span.icon-bar
+					span.icon-bar
+				
+				a.navbar-brand Where to?
+				.collapse.navbar-collapse
+					ul.nav.navbar-nav.navbar-right
+						li.active: a.scroll-link(href="#logo" data-id="logo") Top
+						li: a.scroll-link(href="#basics" data-id="basics") About Me
+						li: a.scroll-link(href="#organized" data-id="organized") Organized
+						li: a.scroll-link(href="#hacked" data-id="hacked") Hacked
+						li: a.scroll-link(href="#filmed" data-id="filmed") Filmed
+						li: a.scroll-link(href="#designed" data-id="designed") Designed
+						li: a.scroll-link(href="#educated" data-id="educated") Educated						
+						li: a.scroll-link(href="#traveled" data-id="traveled") Traveled
+
+		#profile-intro
+			.container
+				#logo
+					#logo-img.center-block
+				.row#mission-statement.text-center
+						h1 Hi. It's Lyla,
+						:markdown
+							#####I'm a <a class="scroll-link" href="#traveled" data-id="traveled">globe</a>-trotting <a class="scroll-link" href="#hacked" data-id="hacked">hacker</a> and <a class="scroll-link" href="#organized" data-id="organized">coordinator</a> with a passion for <a class="scroll-link" href="#filmed" data-id="filmed">multimedia</a>. 
+						p(style='white-space:pre;').text-center Want to work together? Contact me at Lyla.Fujiwara( a )gmail.com
+			
+		
+		
+		.container#profile-content
+			.row#basics
+				.bullet-container.row
+					.col-md-4.bullet
+						.bullet-title
+							h4.bullet-heading GLOW and BE Camps
+								br
+								small Camp Activities Coordinator
+							span.bullet-dateplace Rwanda, 2011-2013
+					
+					.col-md-8
+						.bullet-info
+							span.lead 
+								:markdown
+									Organized camp activites such as sports dances, arts and crafts, and a rather involved camp-wide field days and a scavenger hunt for [GLOW(girls leading our world)](http://www.peacecorps.gov/media/forpress/press/1840/) and Boys Excelling camps.
+							footer
+								span.pull-left
+									:markdown
+										**See** [GLOW Camp Photos](video])
+								span.pull-right
+									:markdown
+										**Used**							
+				.abullet-container.row
+					.col-md-4.activity
+						.bullet-title
+							h4.bullet-heading GLOW and BE Camps
+								br
+								small Camp Activities Coordinator
+							span.bullet-dateplace Rwanda, 2011-2013
+					
+					.col-md-8
+						.bullet-info
+							span.lead 
+								:markdown
+									Organized camp activites such as sports dances, arts and crafts, and a rather involved camp-wide field days and a scavenger hunt for [GLOW(girls leading our world)](http://www.peacecorps.gov/media/forpress/press/1840/) and Boys Excelling camps.
+							footer
+								span.pull-left
+									:markdown
+										**See** [GLOW Camp Photos](video])
+								span.pull-right
+									:markdown
+										**Used**							
+
+					
+		.navbar.navbar-default.navbar-static-bottom#bottombar
+			.container
+				p.navbar-text This website lovingly made with a mixture of CSS3, HTML5, jQuery, Bootstrap, Flat-UI, Jade, Stylus.

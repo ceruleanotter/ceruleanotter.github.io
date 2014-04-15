@@ -1,0 +1,16 @@
+mixin bullet(bulletname, bullettitle, bulletlocation, bulletyear, bulletlead, bulletlinks)
+	.bullet-container.row
+		.col-md-4.bullet
+			.bullet-title
+				h4.bullet-heading=bulletname
+					br
+					small=bullettitle
+				span.bullet-dateplace= bulletlocation 
+				span.bullet-dateplace= bulletyear
+		
+		.col-md-8
+			.bullet-info
+				span.lead
+					=bulletlead
+				footer
+					block
