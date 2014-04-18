@@ -84,6 +84,9 @@
   margin-bottom: 0px;
   font-size: 1.2em;
 }
+#collapseResume {
+  min-height: 800px;
+}
 #logo-img {
   -webkit-animation: slideIn 0.25s ease-in 0.5s 1 normal forwards;
   -moz-animation: slideIn 0.25s ease-in 0.5s 1 normal forwards;
