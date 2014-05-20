@@ -50,10 +50,11 @@ html(lang='en')
 						li: a.scroll-link(href="#organized" data-id="organized") Organized
 						li: a.scroll-link(href="#hacked" data-id="hacked") Hacked
 						li: a.scroll-link(href="#filmed" data-id="filmed") Filmed
+						li: a.scroll-link(href="#educated" data-id="educated") Educated	
+						li: a.scroll-link(href="#travelled" data-id="travelled") Travelled
 						//
-							li: a.scroll-link(href="#designed" data-id="designed") Designed
-							li: a.scroll-link(href="#educated" data-id="educated") Educated						
-							li: a.scroll-link(href="#traveled" data-id="traveled") Traveled
+							li: a.scroll-link(href="#designed" data-id="designed") Designed					
+
 
 		#profile-intro
 			.container
@@ -62,7 +63,7 @@ html(lang='en')
 				.row#mission-statement.spacer-large.text-center
 						h1 Hi. It's Lyla,
 						:markdown
-							#####I'm a <a class="scroll-link" href="#traveled" data-id="traveled">globe</a>-trotting <a class="scroll-link" href="#hacked" data-id="hacked">hacker</a> and <a class="scroll-link" href="#organized" data-id="organized">coordinator</a> with a passion for <a class="scroll-link" href="#filmed" data-id="filmed">multimedia</a>. 
+							#####I'm a <a class="scroll-link" href="#travelled" data-id="travelled">globe</a>-trotting <a class="scroll-link" href="#hacked" data-id="hacked">hacker</a>, <a class="scroll-link" href="#organized" data-id="organized">coordinator</a> and <a class="scroll-link" href="#educated" data-id="educated">educator</a> with a passion for <a class="scroll-link" href="#filmed" data-id="filmed">multimedia</a>. 
 						p(style='white-space:pre;').text-center Want to work together? Contact me at Lyla.Fujiwara( a )gmail.com
 			
 		
@@ -102,6 +103,7 @@ html(lang='en')
 									Working as a [HelpX](https://www.helpx.net/) volunteer at the [Little Flower Cooperative](http://littleflowercommunity.com/)
 				.row-fluid#resumeParent
 					iframe.span12.container.collapse#collapseResume(src="http://docs.google.com/gview?url=http://ceruleanotter.github.io/media/lyla_fujiwara_resume.pdf&embedded=true" frameborder="0")
+			
 			.row#organized
 				h2 Organized
 				+activity("TechKobwa Girl's Computer Camp",'Camp Director and Creator ', 'images/techkobwa.jpg', 'Peace Corps Rwanda', '1/2013-8/2013', "TechKobwa is a one week computer camp for disadvantaged girls that I created during my time in Rwanda.")(class="well well-sm")
@@ -195,15 +197,48 @@ html(lang='en')
 						**See**
 						[Watch Not All Who Wander](https://www.youtube.com/watch?v=pImhkZ0shts), [Watch Return to Sender](https://www.youtube.com/watch?v=sV9cRXal0yo), [Watch Hair Today, Gone Tomorrow!](https://www.youtube.com/watch?v=Euks_k3rx14)
 
+				.row#educated
+					h2 Educated
+				+activity("Senior 5 Computer Science MEC/MPC", 'Teacher and Curriculum Designer', 'images/students.JPG', 'Gashora Girls Academy of Science and Technology', '2012-2013', "An 'Open-Source' Curriculum for C++ Programming")(class="well well-sm")
+					:markdown
+						Over two years I've developed a curriculum to the specifications of the [Rwandan National curriculum](media/nat_curriculum.pdf). The lessons include power-points, homework and projects for a full year C++ course.
+						Topics covered...
+						+ Arithmetic
+						+ Variables
+						+ Debugging
+						+ Loops and If Statements
+						+ Arrays and 2D Arrays
+						+ Functions
+						+ Structs
+						+ ...and more!
+						
+
+						**See**
+						[Download full curriculum materials](https://dl.dropboxusercontent.com/u/25644256/DropBox_LargeWebsiteFiles/Intro_To_Cplusplus_Rwandan_Nat_MEC_MPC.zip)
+
+				+activity("Rwandan Computer Literacy",'Teacher and Curriculum Designer', 'images/complit.png', 'Gashora Girls Academy of Science and Technology', '2012-2013', "A project based curriculum focused on touch typing, computer basics, research and mastery of the core Microsoft Office Suite")
+					:markdown
+						This curriculum is my answer to "what does a student in the 21st century need to know about computers?". 
+						This curriculum was developed for the Rwandan high-school audience and assumes little to no physical exposure to computers.
+						Portions of the curriculum assume an internet connection (especially in the research unit).
+						To expose students to different technologies and make the homework and class more interactive, [Edmodo](https://www.edmodo.com) and [Wikispaces](http://www.wikispaces.com/) are incorporated in to the class.
+
+						**See**
+						[Download full curriculum materials](https://dl.dropboxusercontent.com/u/25644256/DropBox_LargeWebsiteFiles/Computer_Literacy_Rwanda.zip) 					
+
+
+				.row#travelled
+					h2 Travelled
+					span.lead 
+						:markdown
+							I've travelled and worked in Rwanda(Sept 2011 - Dec 2013), South Korea(Summer 2010) and Japan (Summer 2008). I'm a member of the 
+							[couchsurfing](https://www.couchsurfing.org/people/ceruleanotter/) community. More information and pictures coming soon!
+							
+
+
 			//
 				.row#designed
 					h2 Designed
-					span.lead Coming Soon
-				.row#educated
-					h2 Educated
-					span.lead Coming Soon
-				.row#traveled
-					h2 Traveled
 					span.lead Coming Soon
 					
 		.navbar.navbar-default.navbar-static-bottom#bottombar
